@@ -16,7 +16,7 @@ function submitData(username, userEmail) {
         })
         .then(data => {
           let p = document.createElement("p");
-                      let node = document.createTextNode(data[0]);
+                      let node = document.createTextNode(data);
                       p.appendChild(node);
                       body.appendChild(p);
         })

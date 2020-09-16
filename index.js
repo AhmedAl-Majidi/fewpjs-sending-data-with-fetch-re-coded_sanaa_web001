@@ -14,11 +14,6 @@ function submitData(username, userEmail) {
         .then(response => {
             response.json();
         })
-        .then(data => {
-          let p = document.createElement("p");
-                      let node = document.createTextNode(data[id]);
-                      p.appendChild(node);
-                      body.appendChild(p);
-        })
+        .then(data => document.body.innerHTML = data[ "id" ])
 }
 submitData();

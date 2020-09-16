@@ -15,5 +15,8 @@ function submitData(username, userEmail) {
             response.json();
         })
         .then(data => document.body.innerHTML = data[ "id" ])
+        .catch( function ( error ) {
+          document.body.innerHTML = error.message
+          } )
 }
 submitData();

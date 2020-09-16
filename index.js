@@ -1,5 +1,5 @@
 function submitData( name, email ) {
-  
+
   return fetch( 'http://localhost:3000/users', {
       method: "POST",
       headers:{
@@ -9,7 +9,7 @@ function submitData( name, email ) {
       body: JSON.stringify( {
              name,
              email
-             
+
       } )
     } )
     .then( function (response) {
